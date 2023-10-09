@@ -4,6 +4,7 @@
 <div class="container">
   <div class="row">
     <h3 class="mt-5">DATA MAHASISWA</h3>
+    <a class="btn btn-success ml-auto mb-3" href="<?= base_url('user/create') ?>">Tambah Mahasiswa</a>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -24,7 +25,7 @@
             <td><?= $user['npm'] ?></td>
             <td><?= $user['nama_kelas'] ?></td>
             <td>
-              <a class="btn btn-primary" href="">Detail</a>
+            <a class="btn btn-primary" href="<?= base_url('user/' . $user['id']) ?>">Detail</a>
               <a class="btn btn-warning" href="">Edit</a>
               <a class="btn btn-danger" href="">Hapus</a>
 
@@ -36,4 +37,4 @@
     </table>
   </div>
 </div>
-<?= $this->endSection() ?>
+<?= $this->endSection('content') ?>

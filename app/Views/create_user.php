@@ -11,7 +11,13 @@
 
     <?php $nama_kelas = session()->getFlashdata('nama_kelas'); ?>
 
-    <form action="<?= base_url('/user/store') ?>" method="POST">
+    <form action="<?= base_url('/user/store') ?>" method="POST" enctype="multipart/form-data">
+
+    <div class="mb-3">
+            <label for="foto" class="form-label">Foto :</label>
+            <input type="file" class="form-control" name="foto" id="foto">
+        </div>
+        
         <div class="mb-3">
             <label for="nama" class="form-label">Nama :</label>
             <input type="text" class="form-control <?= (empty(validation_show_error('nama'))) ? '':'is-invalid' ?>"
