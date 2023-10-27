@@ -1,0 +1,20 @@
+img {
+    border-radius: 40%;
+    width: 250px; 
+    height: 250px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #de1616; 
+  }
+
+  tr:nth-child(even) {
+    background-color: #de1616; ;
+  }
+
+  
+  td {
+    font-size: 27px;
+  }
+
+  
